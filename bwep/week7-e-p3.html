@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week 7-e-p3</title>
+</head>
+<style>
+  
+ /* h3{text-align: center;}*/
+
+  #container{
+  	display: flex;
+  	flex-wrap: wrap;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	margin: auto;
+  	width: 600px;
+  }
+
+  .col1{
+  	width: 70%;
+  	padding: 10px;
+  	text-align: center;
+  	box-sizing: border-box;
+  }
+
+  .col2{
+  	width: 100%;
+  	text-align: center;
+  	padding: 10px;
+  	box-sizing: border-box;
+  }
+</style>
+
+<body>
+<div id="container">
+
+<!-- <h3>Registration for Covid-19 Volunteer - &reg C19-Team</h3> -->
+
+<!-- Fullname -->
+
+		<div class="col1"><label>Fullname</label></div>
+		<div><input type="text" name="Name" id="Name" pattern="[A-z]{30}"></div>
+
+<!-- Email -->
+		<div class="col1"><label>Email</label></div>
+		<div><input type="email" name="Email" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></div>
+
+<!-- Date -->
+		<div class="col1"><label>Date you can start</label></div>
+		<div><input type="date" placeholder="mm/dd/yyyy" pattern="\d{4}-\d{2}-\d{2}"></div>
+
+<!-- Morning shift -->
+		<div class="col1"><label>Morning shift preference</label></div>
+		<div><input type="time"></div>
+	
+<!-- Evening shift -->
+
+		<div class="col1"><label>Evening shift preference</label></div>
+		<div><input type="time"></div>
+	
+<!-- Hours -->
+
+		<div class="col1"><label>How many hours you can work? In multiple of 3</label></div>
+		<div><input type="number" name="hours" min="3" max="9" step="3"></div>
+
+<!-- Distance -->
+		<div class="col1 slidecontainer"><label>Distance you are willing to commute to volunteer center?</label></div>
+			
+		<div>1<input type="range" min="1", max="15", steps="1" value="3">15</div>
+
+<!-- Currency -->
+		<div class="col1"><label>You currency perference for payment?</label></div>
+		<div>
+			<input type="radio" name="currency" id="pound">
+			<label>&pound;</label>
+			<input type="radio" name="currency" id="yen">
+			<label>&yen;</label>
+			<input type="radio" name="currency" id="euro">
+			<label>&euro;</label>	
+		</div>
+
+<!-- address -->
+	<div class="col2">
+			<textarea id="address" name="address" rows="6" cols="40" placeholder="Type your home address"></textarea>
+	</div>
+
+<!-- Meals -->
+	<div class="col2">
+			<strike>You will be given daily meals</strike>
+	</div>
+
+<!-- T&C -->
+	<div class="col2">
+		<label><input type="checkbox" name="agree" disabled checked> I agree to all terms and conditions</label>
+	</div>
+
+<!-- R U a robot? -->
+	<div class="col2">
+		<label>Prove you are not robot: 10 &lt; 20? 
+		<input type="checkbox" name="robot"></label>
+	</div>
+
+<!-- Submit -->
+	<div class="col2">
+		<input type="submit" name="volunteer" value="Volunteer now!">
+	</div>
+
+<!-- Reset -->
+	<div class="col2">	
+		<input type="reset" name="reset" value="Start Over">
+	</div>
+	
+<!-- MOH -->
+	<div class="col2">
+		<label>For more informaton, visit MOH <a href="https://www.moh.gov.bn/" target="_blank">website</a></label>
+	</div>
+</div>
+
+<!-- <hr>
+
+<p>Denzel Washington once said...</p>
+
+<blockquote>&quot;<strong>At the end of the day it’s not about what you have or even what you’ve accomplished… it’s about who you’ve lifted up, who you’ve made better. It’s about what you’ve given back.</strong>&quot;</blockquote>
+
+<pre>So roses are red, violets are blue
+It's all in my head, no matter what I do
+So roses are red, violets are blue
+It's all in my head, no matter what I do
+</pre> -->
+</body>
+
+</html>
